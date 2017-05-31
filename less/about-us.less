@@ -1,0 +1,77 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .container-mobile ();
+  .container ();
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: @font-open-sans;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: @font-main-color;
+}
+
+.about-us__item {
+  position: relative;
+  padding-top: 56px;
+  margin-bottom: 27px;
+}
+
+.about-us__item p {
+  margin: 0;
+  font-family: @font-open-sans;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: @font-main-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 38px;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-us__item--materials p::before {
+  top: 2px;
+  left: 8px;
+  background-image: url("../img/icon-feature-1.svg");
+}
+
+.about-us__item--price p::before {
+  top: 2px;
+  background-image: url("../img/icon-feature-3.svg");
+}
+
+.about-us__item--like p::before {
+  top: 7px;
+  left: 7px;
+  background-image: url("../img/icon-feature-5.svg");
+}
+
+.about-us__item--handmade p::before {
+  top: 4px;
+  left: 3px;
+  background-image: url("../img/icon-feature-2.svg");
+}
+
+.about-us__item--homeland p::before {
+  top: 5px;
+  left: -6px;
+  background-image: url("../img/icon-feature-4.svg");
+}
+
+.about-us__item--pack p::before {
+  top: 3px;
+  left: 3px;
+  background-image: url("../img/icon-feature-6.svg");
+}

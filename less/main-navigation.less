@@ -1,0 +1,129 @@
+.main-navigation {
+  .container();
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.main-navigation__logo {
+  border-bottom: @border-header;
+  text-align: center;
+}
+
+.main-navigation__logo img {
+  width: 86px;
+  height: auto;
+  padding-top: 21px;
+  padding-bottom: 17px;
+}
+
+.main-navigation__logo[href] img {
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-navigation__user {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-navigation__item a {
+  display: block;
+  padding: 26px 0 28px 75px;
+  font-family: @font-open-sans;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: @font-main-color;
+  text-decoration: none;
+  border-bottom: @border-header;
+}
+
+.main-navigation__item--cart a {
+  border-bottom: none;
+}
+
+.main-navigation__item a[href] {
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  top: 29px;
+  right: 30px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: @bg-main;
+  cursor: pointer;
+  border: none;
+}
+
+.main-navigation--close .main-navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 6px 0 0 #000000,
+              0 12px 0 0 #000000;
+}
+
+.main-navigation--close .main-navigation__logo {
+  border-bottom: none;
+}
+
+.main-navigation--opened .main-navigation__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -2px;
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-navigation--close .main-navigation__item {
+    display: none;
+}
+
+.main-navigation--nojs .main-navigation__toggle {
+  display: none;
+}
