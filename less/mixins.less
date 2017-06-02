@@ -1,13 +1,15 @@
 .container () {
-  max-width: 320px;
+  width: 260px;
   margin: 0 auto;
-}
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
-.container-mobile () {
-  @media @mobile-widths-only {
-    width: 260px;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin: 0 auto;
+  @media @tablet-widths {
+    width: 668px;
+  }
+
+  @media @desktop-widths {
+    width: 1050px;
   }
 }
