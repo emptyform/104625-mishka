@@ -1,0 +1,256 @@
+.form {
+  .container ();
+}
+
+.form__description {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: @font-open-sans;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: @font-normal-color;
+}
+
+.form__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+}
+
+.form__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+
+  &--type {
+    padding-bottom: 41px;
+  }
+
+  &--add {
+    padding-bottom: 18px;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.form__name {
+  position: relative;
+  font-family: @font-open-sans;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: @font-mark-color;
+  margin-bottom: 23px;
+
+  &--name {
+    margin-bottom: 29px;
+  }
+
+  &--phone,
+  &--mail {
+    margin-bottom: 16px;
+  }
+}
+
+.form__name::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 198px;
+  top: 7px;
+  left: 62px;
+  background-color: @font-mark-color;
+}
+
+.form__label {
+  box-sizing: border-box;
+  font-family: @font-open-sans;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: @font-main-color;
+
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--radio {
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    padding-left: 62px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 36px;
+      width: 36px;
+      border: @border-form;
+      border-radius: 50%;
+    }
+  }
+
+  &--checkbox {
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    padding-left: 62px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 37px;
+      width: 36px;
+      border: @border-form;
+    }
+  }
+
+  &--first-name,
+  &--second-name,
+  &--last-name {
+    padding-left: 0;
+    margin-bottom: 14px;
+  }
+}
+
+.form__input--radio:checked + .form__label--radio::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 16px;
+  height: 17px;
+  background-color: @font-mark-color;
+  border-radius: 50%;
+}
+
+.form__input--radio + .form__label--radio:hover::before,
+.form__input--checkbox + .form__label--checkbox:hover::before {
+  border-color: @font-mark-color;
+}
+
+.form__input--radio + .form__label--radio:active::before,
+.form__input--checkbox + .form__label--checkbox:active::before {
+  border-color: #c7c7c7;
+}
+
+.form__input--checkbox:checked + .form__label--checkbox::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 14px;
+  width: 22px;
+  height: 17px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.form__input {
+
+  &--radio {
+    display: none;
+  }
+
+  &--checkbox {
+    display: none;
+  }
+
+  &--phone {
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 17px;
+    border: none;
+    border-bottom: @border-form;
+    padding-top: 6px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 96% 0;
+  }
+
+  &--mail {
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 17px;
+    border: none;
+    border-bottom: @border-form;
+    padding-top: 5px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 98% 0;
+  }
+
+  &:focus {
+    border-color: @font-mark-color;
+    outline: none;
+  }
+}
+
+.form__wrapper--name input {
+  box-sizing: border-box;
+  margin-bottom: 23px;
+  padding-bottom: 16px;
+  border: none;
+  border-bottom: @border-form;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form input[placeholder],
+.form textarea[placeholder] {
+  font-family: @font-open-sans;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  color: @font-normal-color;
+}
+
+.form__wrapper--add textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 142px;
+  padding: 15px;
+  border: @border-form;
+  font-family: @font-open-sans;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  color: @font-normal-color;
+
+  &:focus {
+    border-color: @font-mark-color;
+    outline: none;
+  }
+}
+
+.form__btn {
+  width: 100%;
+}
+
+.form__comments {
+  margin-bottom: 30px;
+  font-family: @font-open-sans;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: @font-normal-color;
+}
