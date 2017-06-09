@@ -10,6 +10,11 @@
   margin-bottom: 30px;
   padding: 0;
   list-style: none;
+
+  @media @tablet-widths {
+    margin-bottom: 53px;
+    flex-direction: row;
+  }
 }
 
 .product__item {
@@ -25,5 +30,23 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media @tablet-widths {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 51px;
+  }
+
+  @media @desktop-widths {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+    margin-bottom: 0;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

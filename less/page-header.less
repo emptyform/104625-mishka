@@ -3,12 +3,36 @@
   flex-direction: column;
   margin-bottom: 27px;
 
+  @media @tablet-widths {
+    margin-bottom: 42px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 60px;
+  }
+
   &--form {
     margin-bottom: 23px;
+
+    @media @tablet-widths {
+      margin-bottom: 79px;
+    }
+
+    @media @desktop-widths {
+      margin-bottom: 149px;
+    }
   }
 
   &--catalog {
     margin-bottom: 30px;
+
+    @media @tablet-widths {
+      margin-bottom: 84px;
+    }
+
+    @media @desktop-widths {
+      margin-bottom: 156px;
+    }
   }
 }
 
@@ -21,14 +45,42 @@
   background-position: center -20px;
   border-top: @border-header;
 
+  @media @tablet-widths {
+    margin-top: -73px;
+    padding-top: 153px;
+    background-size: cover;
+    background-position: center 0;
+  }
+
+  @media @desktop-widths {
+    margin-top: -42px;
+    background-size: contain;
+  }
+
   &--catalog {
     background-image: none;
     background-color: @bg-footer;
+
+    @media @tablet-widths {
+      padding-top: 95px;
+    }
+
+    @media @desktop-widths {
+      padding-top: 94px;
+    }
   }
 
   &--form {
     background-image: none;
     background-color: @bg-footer;
+
+    @media @tablet-widths {
+      padding-top: 93px;
+    }
+
+    @media @desktop-widths {
+      padding-top: 94px;
+    }
   }
 }
 
@@ -41,6 +93,20 @@
   font-size: 27px;
   line-height: 30px;
   color: #010000;
+
+
+  @media @tablet-widths {
+    margin-bottom: 373px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media @desktop-widths {
+    width: 55%;
+    margin-bottom: 359px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 
   &--catalog {
     width: 76%;

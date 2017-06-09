@@ -6,6 +6,19 @@
   .container ();
   padding-top: 24px;
   padding-bottom: 23px;
+
+  @media @tablet-widths {
+    justify-content: space-between;
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+}
+
+.page-footer__logo {
+  @media @tablet-widths {
+    width: 103px;
+    height: 35px;
+  }
 }
 
 .social-links__list {
@@ -21,6 +34,26 @@
   list-style: none;
   border-bottom: @border-header;
   font-size: 0;
+
+  @media @tablet-widths {
+    width: 250px;
+    margin-bottom: 0;
+    margin-left: 73px;
+    justify-content: center;
+    border-bottom: none;
+    padding: 0;
+  }
+}
+
+.social-links__item {
+
+  @media @tablet-widths {
+    padding-right: 41px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 }
 
 .social-link {
@@ -74,6 +107,10 @@
 
   &:active {
     opacity: 0.2;
+  }
+
+  @media @tablet-widths {
+    padding-left: 0;
   }
 }
 

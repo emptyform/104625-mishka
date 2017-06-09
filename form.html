@@ -16,10 +16,10 @@
       </a>
       <button class="main-navigation__toggle" type="button">Открыть меню</button>
       <ul class="main-navigation__list">
-        <li class="main-navigation__item">
+        <li class="main-navigation__item main-navigation__item--catalog">
           <a href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="main-navigation__item">
+        <li class="main-navigation__item main-navigation__item--form">
           <a href="form.html">Вязание на заказ</a>
         </li>
       </ul>
@@ -31,52 +31,71 @@
           <a href="#">Корзина: пока пуста</a>
         </li>
       </ul>
+      <ul class="main-navigation__sale">
+        <li class="main-navigation__item">
+          <a href="#">Новые поступления</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#">Распродажа</a>
+        </li>
+      </ul>
+      <span class="main-navigation__info">Бесплатная доставка по России</span>
     </nav>
     <div class="page-header__wrapper page-header__wrapper--form">
       <h1 class="page-header__title page-header__title--form">Вязание на заказ</h1>
     </div>
   </header>
   <main class="form">
-    <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="form__form" action="https://echo.htmlacademy.ru/" method="get">
       <div class="form__wrapper form__wrapper--type">
         <span class="form__name form__name--type">Тип</span>
-        <input class="form__input form__input--radio" type="radio" name="radio" id="radio-1" checked>
-        <label class="form__label form__label--radio" for="radio-1">Аксессуар для интерьера</label>
-        <input class="form__input form__input--radio" type="radio" name="radio" id="radio-2">
-        <label class="form__label form__label--radio" for="radio-2">Детская игрушка</label>
+        <div class="form__column form__column--type">
+          <input class="form__input form__input--radio" type="radio" name="radio" id="radio-1" checked>
+          <label class="form__label form__label--radio" for="radio-1">Аксессуар для интерьера</label>
+          <input class="form__input form__input--radio" type="radio" name="radio" id="radio-2">
+          <label class="form__label form__label--radio" for="radio-2">Детская игрушка</label>
+        </div>
       </div>
-      <div class="form__wrapper form__wrapper--color">
-        <span class="form__name form__name--color">Цвет</span>
-        <input class="form__input form__input--checkbox" type="checkbox" name="checkbox-1" id="checkbox-1" checked>
-        <label class="form__label form__label--checkbox" for="checkbox-1">Белый</label>
-        <input class="form__input form__input--checkbox" type="checkbox" name="checkbox-2" id="checkbox-2" checked>
-        <label class="form__label form__label--checkbox" for="checkbox-2">Серый</label>
-        <input class="form__input form__input--checkbox" type="checkbox" name="checkbox-3" id="checkbox-3">
-        <label class="form__label form__label--checkbox" for="checkbox-3">«Тиффани»</label>
-        <input class="form__input form__input--checkbox" type="checkbox" name="checkbox-4" id="checkbox-4">
-        <label class="form__label form__label--checkbox" for="checkbox-4">Черный</label>
-        <input class="form__input form__input--checkbox" type="checkbox" name="checkbox-5" id="checkbox-5">
-        <label class="form__label form__label--checkbox" for="checkbox-5">Розовый</label>
-        <input class="form__input form__input--checkbox" type="checkbox" name="checkbox-6" id="checkbox-6">
-        <label class="form__label form__label--checkbox" for="checkbox-6">Оранжевый</label>
+      <div class="form__bg-wrap">
+        <div class="form__wrapper form__wrapper--color">
+          <span class="form__name form__name--color">Цвет</span>
+          <div class="form__column form__column--color">
+            <input class="form__input form__input--checkbox" type="checkbox" name="checkbox-1" id="checkbox-1" checked>
+            <label class="form__label form__label--checkbox" for="checkbox-1">Белый</label>
+            <input class="form__input form__input--checkbox" type="checkbox" name="checkbox-2" id="checkbox-2" checked>
+            <label class="form__label form__label--checkbox" for="checkbox-2">Серый</label>
+            <input class="form__input form__input--checkbox" type="checkbox" name="checkbox-3" id="checkbox-3">
+            <label class="form__label form__label--checkbox" for="checkbox-3">«Тиффани»</label>
+            <input class="form__input form__input--checkbox" type="checkbox" name="checkbox-4" id="checkbox-4">
+            <label class="form__label form__label--checkbox" for="checkbox-4">Черный</label>
+            <input class="form__input form__input--checkbox" type="checkbox" name="checkbox-5" id="checkbox-5">
+            <label class="form__label form__label--checkbox" for="checkbox-5">Розовый</label>
+            <input class="form__input form__input--checkbox" type="checkbox" name="checkbox-6" id="checkbox-6">
+            <label class="form__label form__label--checkbox" for="checkbox-6">Оранжевый</label>
+          </div>
+        </div>
       </div>
       <div class="form__wrapper form__wrapper--name">
         <span class="form__name form__name--name">ФИО</span>
-        <label class="form__label form__label--first-name" for="first-name">Имя:</label>
-        <input class="form__input form__input--first-name" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
-        <label class="form__label form__label--last-name" for="last-name">Фамилия:</label>
-        <input class="form__input form__input--last-name" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
-        <label class="form__label form__label--second-name" for="second-name">Отчество:</label>
-        <input class="form__input form__input--second-name" type="text" name="second-name" id="second-name" placeholder="Отчество, если желаете">
+        <div class="form__column form__column--name">
+          <label class="form__label form__label--first-name" for="first-name">Имя:</label>
+          <input class="form__input form__input--first-name" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
+          <label class="form__label form__label--last-name" for="last-name">Фамилия:</label>
+          <input class="form__input form__input--last-name" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
+          <label class="form__label form__label--second-name" for="second-name">Отчество:</label>
+          <input class="form__input form__input--second-name" type="text" name="second-name" id="second-name" placeholder="Отчество, если желаете">
+        </div>
       </div>
-      <div class="form__wrapper form__wrapper--phone">
-        <span class="form__name form__name--phone">Тел</span>
-        <input class="form__input form__input--phone" type="tel" name="phone" pattern="7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
-      </div>
-      <div class="form__wrapper form__wrapper--mail">
-        <span class="form__name form__name--mail">E-mail</span>
-        <input class="form__input form__input--mail" type="email" name="email" placeholder="Ваш Email*" required>
+      <div class="form__bg-wrap">
+        <div class="form__wrapper form__wrapper--phone">
+          <span class="form__name form__name--phone">Тел</span>
+          <input class="form__input form__input--phone" type="tel" name="phone" pattern="7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
+        </div>
+        <div class="form__wrapper form__wrapper--mail">
+          <span class="form__name form__name--mail">E-mail</span>
+          <input class="form__input form__input--mail" type="email" name="email" placeholder="Ваш Email*" required>
+        </div>
       </div>
       <div class="form__wrapper form__wrapper--add">
         <span class="form__name form__name--add">Доп</span>
@@ -90,6 +109,9 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__container">
+      <a href="index.html" class="page-footer__logo">
+        <img src="img/logo-mobile.svg" width="103" height="35" alt="MISHKA">
+      </a>
       <ul class="social-links__list">
         <li class="social-links__item">
           <a class="social-link social-link--instagram" href="#">Мы в Инстаграмме</a>

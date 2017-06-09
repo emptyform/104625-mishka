@@ -1,5 +1,21 @@
 .about-us {
+
+  @media @tablet-widths {
+    margin-bottom: 27px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 34px;
+  }
+}
+
+.about-us__container {
   .container ();
+
+  @media @desktop-widths {
+    box-sizing: border-box;
+    padding: 0 175px;
+  }
 }
 
 .about-us__title {
@@ -10,12 +26,39 @@
   font-size: 25px;
   line-height: 30px;
   color: @font-main-color;
+
+  @media @tablet-widths {
+    width: 100%;
+    margin-bottom: 48px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media @desktop-widths {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.about-us__column {
+
+  @media @tablet-widths {
+    width: 50%;
+  }
+
+  @media @desktop-widths {
+    width: 350px;
+  }
 }
 
 .about-us__item {
   position: relative;
   padding-top: 56px;
   margin-bottom: 27px;
+
+  @media @tablet-widths {
+    margin-bottom: 55px;
+  }
 }
 
 .about-us__item p {
@@ -25,6 +68,11 @@
   font-size: 17px;
   line-height: 20px;
   color: @font-main-color;
+
+  @media @tablet-widths {
+    font-size: 20px;
+    line-height: 22px;
+  }
 
   &::before {
     content: "";
