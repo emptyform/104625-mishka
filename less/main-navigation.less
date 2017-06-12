@@ -151,6 +151,13 @@
   }
 }
 
+.main-navigation__item--search {
+  @media @tablet-widths {
+    border-right: @border-header;
+    border-left: @border-header;
+  }
+}
+
 .main-navigation__item--cart {
   border-bottom: none;
 }
@@ -208,8 +215,6 @@
   @media @tablet-widths {
     padding: 31px 41px 32px 41px;
     font-size: 0;
-    border-right: @border-header;
-    border-left: @border-header;
   }
 
   &::before {
