@@ -6,6 +6,20 @@
   padding-bottom: 32px;
   border: @border-header;
 
+  @media @tablet-widths {
+    margin-bottom: 63px;
+    padding-bottom: 45px;
+  }
+
+  @media @desktop-widths {
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 106px;
+    padding-bottom: 0;
+  }
+
   &:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
@@ -36,10 +50,53 @@
     background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
   }
+
+  @media @tablet-widths {
+    margin-top: 32px;
+    margin-bottom: 11px;
+    padding-left: 105px;
+    font-size: 20px;
+
+    &::before {
+      left: 40px;
+      top: -6px;
+    }
+  }
+
+  @media @desktop-widths {
+    position: absolute;
+    width: 200px;
+    top: 63px;
+    right: 89px;
+    padding-left: 0;
+
+    &::before {
+      left: 2px;
+      top: -54px;
+    }
+  }
 }
 
 .video__wrapper {
   position: relative;
+
+  @media @tablet-widths {
+    order: -1;
+    margin: 0 auto;
+  }
+
+  @media @desktop-widths {
+    width: 682px;
+    margin: 0;
+    margin-bottom: -6px;
+  }
+}
+
+.video__wrapper img {
+  @media @tablet-widths {
+    width: 681px;
+    height: 455px;
+  }
 }
 
 .video__btn-play {
@@ -79,6 +136,13 @@
 .video__description {
   display: flex;
   flex-direction: column;
+
+  @media @desktop-widths {
+    width: 288px;
+    box-sizing: border-box;
+    padding-top: 154px;
+    text-align: left;
+  }
 }
 
 .video__description p {
@@ -91,9 +155,34 @@
   font-size: 13px;
   line-height: 24px;
   color: @font-normal-color;
+
+  @media @tablet-widths {
+    margin-top: 21px;
+    margin-bottom: 35px;
+    padding-left: 39px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 47px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .video__btn {
   margin: 0 33px;
   width: 74%;
+
+  @media @tablet-widths {
+    margin: 0 auto;
+    width: 88%;
+  }
+
+  @media @desktop-widths {
+    margin: 0;
+    width: 230px;
+    font-size: 17px;
+  }
 }

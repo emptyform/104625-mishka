@@ -16,10 +16,10 @@
       </a>
       <button class="main-navigation__toggle" type="button">Открыть меню</button>
       <ul class="main-navigation__list">
-        <li class="main-navigation__item">
+        <li class="main-navigation__item main-navigation__item--catalog">
           <a href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="main-navigation__item">
+        <li class="main-navigation__item main-navigation__item--form">
           <a href="form.html">Вязание на заказ</a>
         </li>
       </ul>
@@ -31,6 +31,15 @@
           <a href="#">Корзина: пока пуста</a>
         </li>
       </ul>
+      <ul class="main-navigation__sale">
+        <li class="main-navigation__item">
+          <a href="#">Новые поступления</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#">Распродажа</a>
+        </li>
+      </ul>
+      <span class="main-navigation__info">Бесплатная доставка по России</span>
     </nav>
     <div class="page-header__wrapper">
       <h1 class="page-header__title">Милые штуки ручной  работы для дома</h1>
@@ -49,50 +58,58 @@
       <div class="products-feature__container">
         <h2 class=" products-feature__title">Вязаные корзинки</h2>
         <span class="products-feature__mark">Товар недели</span>
-        <p class="products-feature__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="products-feature__options">
-          <tr>
-            <td class="options__parameter">Цвет:</td>
-            <td class="options__value">«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td class="options__parameter">Диаметр:</td>
-            <td class="options__value">25 см</td>
-          </tr>
-          <tr>
-            <td class="options__parameter">Высота:</td>
-            <td class="options__value">15 см</td>
-          </tr>
-        </table>
+        <div class="products-feature__column">
+          <p class="products-feature__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="products-feature__options">
+            <tr>
+              <td class="options__parameter">Цвет:</td>
+              <td class="options__value">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td class="options__parameter">Диаметр:</td>
+              <td class="options__value">25 см</td>
+            </tr>
+            <tr>
+              <td class="options__parameter">Высота:</td>
+              <td class="options__value">15 см</td>
+            </tr>
+          </table>
+        </div>
         <img class="products-feature__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Наши замечательные корзинки">
         <span class="products-feature__price">Цена: 990 руб.</span>
         <a class="products-feature__btn btn" href="#">Заказать</a>
       </div>
     </section>
     <section class="about-us">
-      <h2 class="about-us__title">Коротко о нас:</h2>
-      <div class="about-us__item about-us__item--materials">
-        <p>Экологически
-          <br> чистые материалы</p>
-      </div>
-      <div class="about-us__item about-us__item--price">
-        <p>Скандинавский стиль
-          <br> по российской цене</p>
-      </div>
-      <div class="about-us__item about-us__item--like">
-        <p>Увеличивает лайки
-          <br> на фотографиях</p>
-      </div>
-      <div class="about-us__item about-us__item--handmade">
-        <p>Связано вручную с
-          <br> любовью и умилением</p>
-      </div>
-      <div class="about-us__item about-us__item--homeland">
-        <p>Поддержка отечественного производителя</p>
-      </div>
-      <div class="about-us__item about-us__item--pack">
-        <p>Поставляется в
-          <br> подарочной упаковке</p>
+      <div class="about-us__container">
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <div class="about-us__column">
+          <div class="about-us__item about-us__item--materials">
+            <p>Экологически
+              <br> чистые материалы</p>
+          </div>
+          <div class="about-us__item about-us__item--price">
+            <p>Скандинавский стиль
+              <br> по российской цене</p>
+          </div>
+          <div class="about-us__item about-us__item--like">
+            <p>Увеличивает лайки
+              <br> на фотографиях</p>
+          </div>
+        </div>
+        <div class="about-us__column">
+          <div class="about-us__item about-us__item--handmade">
+            <p>Связано вручную с
+              <br> любовью и умилением</p>
+          </div>
+          <div class="about-us__item about-us__item--homeland">
+            <p>Поддержка отечественного производителя</p>
+          </div>
+          <div class="about-us__item about-us__item--pack">
+            <p>Поставляется в
+              <br> подарочной упаковке</p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="reviews">
@@ -100,7 +117,7 @@
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__list slider">
           <blockquote class="reviews__item slide">
-            <p>Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+            <p>Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <cite class="reviews__author"><b>Анастасия Красильникова</b>@misssssiskras</cite>
           </blockquote>
         </div>
@@ -112,31 +129,38 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__container">
-        <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__info-list">
-          <tr>
-            <td class="info-list__option">e-mail:</td>
-            <td class="info-list__value"><a href="#">info@mimimishkashop.ru</a></td>
-          </tr>
-          <tr>
-            <td class="info-list__option">адрес:</td>
-            <td class="info-list__value">г. Санкт-Петербург,
-              <br>ул. Большая Конюшенная,
-              <br>д. 19/8, офис 101</td>
-          </tr>
-        </table>
-      </div>
-      <div class="contacts__map-wrapper">
-        <div class="contacts__map" id="map"></div>
-      </div>
-      <div class="contacts__container">
-        <a class="contacts__btn btn" href="#">Напишите нам</a>
+      <div class="contacts__wrapper">
+        <div class="contacts__container">
+          <div class="contacts__column">
+            <h2 class="contacts__title">Контакты</h2>
+            <table class="contacts__info-list">
+              <tr>
+                <td class="info-list__option">e-mail:</td>
+                <td class="info-list__value"><a href="#">info@mimimishkashop.ru</a></td>
+              </tr>
+              <tr>
+                <td class="info-list__option">адрес:</td>
+                <td class="info-list__value">г. Санкт-Петербург,
+                  <br>ул. Большая Конюшенная,
+                  <br>д. 19/8, офис 101</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="contacts__map-wrapper">
+          <div class="contacts__map" id="map"></div>
+        </div>
+        <div class="contacts__container contacts__container--inner">
+          <a class="contacts__btn btn" href="#">Напишите нам</a>
+        </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__container">
+      <a class="page-footer__logo">
+        <img src="img/logo-mobile.svg" width="103" height="35" alt="MISHKA">
+      </a>
       <ul class="social-links__list">
         <li class="social-links__item">
           <a class="social-link social-link--instagram" href="#">Мы в Инстаграмме</a>
