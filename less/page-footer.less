@@ -21,7 +21,16 @@
     display: block;
     width: 103px;
     height: 35px;
+    margin-top: -8px;
   }
+}
+
+.page-footer__logo:hover .page-footer__icon {
+  fill: @icon-hover;
+}
+
+.page-footer__logo:active .page-footer__icon {
+  fill: @icon-active;
 }
 
 .social-links__list {
@@ -74,6 +83,10 @@
     height: 28px;
     background-repeat: no-repeat;
   }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .social-link--facebook {
@@ -84,14 +97,38 @@
     top: 0;
     background-image: url("../img/icon-fb.svg");
   }
+
+  &:hover {
+    &::before {
+      background-image: url("../img/icon-fb-hover.svg");
+    }
+  }
 }
 
-.social-link--twitter::before {
-  background-image: url("../img/icon-twitter.svg");
+.social-link--twitter {
+
+  &::before {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &:hover {
+    &::before {
+      background-image: url("../img/icon-twitter-hover.svg");
+    }
+  }
 }
 
-.social-link--instagram::before {
-  background-image: url("../img/icon-insta.svg");
+.social-link--instagram {
+
+  &::before {
+    background-image: url("../img/icon-insta.svg");
+  }
+
+  &:hover {
+    &::before {
+      background-image: url("../img/icon-insta-hover.svg");
+    }
+  }
 }
 
 .page-footer__copyright {
@@ -109,7 +146,7 @@
   color: @font-main-color;
 
   &:active {
-    opacity: 0.2;
+    opacity: 0.5;
   }
 
   @media @tablet-widths {

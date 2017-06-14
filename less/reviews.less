@@ -1,20 +1,25 @@
 .reviews {
   margin-bottom: 36px;
   padding-top: 27px;
-  padding-bottom: 40px;
+  .grey-wave ();
 
   @media @tablet-widths {
-    margin-bottom: 146px;
+    margin-bottom: 62px;
     padding-top: 79px;
     padding-bottom: 47px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 350px auto;
+
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   @media @desktop-widths {
-    margin-bottom: 161px;
+    margin-bottom: 64px;
     padding-top: 0;
-    padding-bottom: 0;
     background-image: none;
   }
 }
@@ -25,15 +30,22 @@
 
   @media @tablet-widths {
     justify-content: space-between;
+    margin-bottom: 84px;
   }
 
   @media @desktop-widths {
     box-sizing: border-box;
+    margin-bottom: 50px;
     padding-left: 175px;
     padding-top: 70px;
     padding-bottom: 95px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 }
 

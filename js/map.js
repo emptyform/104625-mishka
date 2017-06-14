@@ -1,9 +1,9 @@
 var latlng = new google.maps.LatLng(59.936204, 30.321880);
 
 var settings = {
-  zoom: 16,
-  center: latlng,
-  mapTypeId: 'roadmap'
+  zoom: 16,
+  center: latlng,
+  mapTypeId: 'roadmap'
 }
 
 var map = new google.maps.Map(document.getElementById("map"),

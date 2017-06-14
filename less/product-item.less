@@ -51,8 +51,12 @@
 
   @media @tablet-widths {
     margin-top: 25px;
-    padding-right: 55px;
+    padding-right: 65px;
     font-size: 18px;
+  }
+
+  @media @desktop-widths {
+    padding-right: 55px;
   }
 }
 
@@ -114,7 +118,16 @@
   font-size: 0;
   border: none;
   cursor: pointer;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  opacity: 0.5;
+}
+
+.item__btn-icon {
+  fill: #dad9d9;
+}
+
+.item__btn:hover .item__btn-icon {
+  fill: @icon-hover;
+}
+
+.item__btn:active .item__btn-icon {
+  fill: @icon-active;
 }

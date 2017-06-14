@@ -14,3 +14,66 @@
     width: 1050px;
   }
 }
+
+.white-wave () {
+
+  @media @tablet-widths {
+  position: relative;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 23px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: 768px 23px;
+    }
+  }
+
+  @media @desktop-widths {
+    &::after {
+      height: 31px;
+      background-size: 1250px 40px;
+    }
+  }
+}
+
+.grey-wave () {
+  position: relative;
+  padding-bottom: 40px;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 320px 7px;
+  }
+
+  @media @tablet-widths {
+    padding-bottom: 24px;
+
+    &::after {
+      height: 17px;
+      background-size: 768px 17px;
+    }
+  }
+
+    @media @desktop-widths {
+      padding-bottom: 51px;
+
+    &::after {
+      height: 29px;
+      background-size: 1150px 23px;
+    }
+  }
+}

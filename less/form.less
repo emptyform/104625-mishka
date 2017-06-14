@@ -361,6 +361,15 @@
     background-repeat: no-repeat;
     background-position: 96% 0;
 
+    &:hover {
+      background-image: url("../img/icon-phone-hover.svg");
+      border-color: @icon-hover;
+    }
+
+    &:active {
+      background-image: url("../img/icon-phone-hover.svg");
+    }
+
     @media @tablet-widths {
       width: 501px;
       padding-bottom: 13px;
@@ -385,6 +394,15 @@
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: 98% 0;
+
+    &:hover {
+      background-image: url("../img/icon-mail-hover.svg");
+      border-color: @icon-hover;
+    }
+
+    &:active {
+      background-image: url("../img/icon-mail-hover.svg");
+    }
 
     @media @tablet-widths {
       width: 501px;
@@ -476,17 +494,21 @@
   line-height: 18px;
   color: @font-normal-color;
 
+  &:hover {
+    border-color: @icon-hover;
+  }
+
+  &:focus {
+    border-color: @font-mark-color;
+    outline: none;
+  }
+
   @media @tablet-widths {
     width: 501px;
   }
 
   @media @desktop-widths {
     width: 700px;
-  }
-
-  &:focus {
-    border-color: @font-mark-color;
-    outline: none;
   }
 }
 
