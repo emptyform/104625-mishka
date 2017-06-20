@@ -1140,7 +1140,6 @@
       // reset docElem and body to ensure the correct value is returned
       docElem.style.cssText = fsCss;
       body.style.cssText = fsCss;
-
       body.appendChild( div );
       eminpx = div.offsetWidth;
       body.removeChild( div );
