@@ -333,9 +333,21 @@
 }
 
 .main-navigation--close .main-navigation__item {
-  display: none;
+  @media @mobile-widths-only {
+    display: none;
+  }
 }
 
 .main-navigation--nojs .main-navigation__toggle {
   display: none;
+}
+
+.main-navigation--nojs .main-navigation__item {
+  @media @mobile-widths-only {
+    display: block;
+  }
+}
+
+.main-navigation--nojs .main-navigation__logo {
+  border-bottom: @border-header;
 }
