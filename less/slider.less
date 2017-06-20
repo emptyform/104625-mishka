@@ -1,0 +1,38 @@
+.slider {
+  position: relative;
+  width: 100%;
+  min-height: 355px;
+
+  @media @tablet-widths{
+    min-height: 234px;
+  }
+
+  @media @desktop-widths {
+    min-height: 183px;
+  }
+}
+
+.slider__slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s;
+}
+
+.slider__slide--showing {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide-btn-wrapper {
+  z-index: 3;
+}
+
+.slide-btn-wrapper--nojs {
+  display: none;
+}
