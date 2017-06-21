@@ -4,6 +4,10 @@
   @media @tablet-widths {
     width: 100%;
   }
+
+  @media @desktop-widths {
+    width: 100%;
+  }
 }
 
 .form__description {
@@ -16,7 +20,10 @@
   color: @font-normal-color;
 
   @media @tablet-widths {
-    .container();
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 668px;
     margin: 0 auto;
     margin-bottom: 57px;
     font-size: 17px;
@@ -101,6 +108,7 @@
   }
 
   @media @desktop-widths {
+    width: 1150px;
     &--add {
       padding-bottom: 48px;
     }

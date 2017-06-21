@@ -218,11 +218,21 @@
     padding: 31px 41px 32px 41px;
     font-size: 0;
   }
+
+  @media @desktop-widths {
+    padding: 31px 41px 32px 41px;
+    font-size: 0;
+  }
 }
 
 .main-navigation__item--cart a {
 
   @media @tablet-widths {
+    padding: 31px 0 28px 82px;
+    font-size: 17px;
+  }
+
+  @media @desktop-widths {
     padding: 31px 0 28px 82px;
     font-size: 17px;
   }
@@ -323,9 +333,21 @@
 }
 
 .main-navigation--close .main-navigation__item {
-  display: none;
+  @media @mobile-widths-only {
+    display: none;
+  }
 }
 
 .main-navigation--nojs .main-navigation__toggle {
   display: none;
+}
+
+.main-navigation--nojs .main-navigation__item {
+  @media @mobile-widths-only {
+    display: block;
+  }
+}
+
+.main-navigation--nojs .main-navigation__logo {
+  border-bottom: @border-header;
 }
