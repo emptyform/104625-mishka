@@ -61,3 +61,137 @@
     }
   }
 }
+
+.product__wrapper {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+
+  @media @tablet-widths {
+    width: 50%;
+    height: 334px;
+  }
+
+  @media @desktop-widths {
+    width: 100%;
+    height: 461px;
+  }
+}
+
+.product__wrapper img {
+  @media @tablet-widths {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media @desktop-widths {
+    width: 315px;
+    height: 461px;
+  }
+}
+
+.product__description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media @tablet-widths {
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  @media @desktop-widths {
+    width: 100%;
+    flex-grow: 1;
+  }
+}
+
+.product__name {
+  margin: 0;
+  margin-top: 22px;
+  padding-bottom: 19px;
+  padding-right: 27px;
+  padding-left: 27px;
+
+  @media @tablet-widths {
+    margin-top: 25px;
+    padding-right: 65px;
+    font-size: 18px;
+  }
+
+  @media @desktop-widths {
+    padding-right: 55px;
+  }
+}
+
+.product__name a {
+  font-family: @font-open-sans;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: @font-main-color;
+  text-decoration: none;
+
+  @media @tablet-widths {
+    font-size: 20px;
+  }
+}
+
+.product__name span {
+  display: block;
+  margin-top: 5px;
+  font-family: @font-open-sans;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+  color: @font-normal-color;
+
+  @media @tablet-widths {
+    font-size: 15px;
+  }
+}
+
+.product__buy {
+  display: flex;
+  margin: 0 27px;
+  padding-top: 20px;
+  padding-bottom: 28px;
+  border-top: @border-header;
+
+  @media @tablet-widths {
+    margin: 0 32px;
+  }
+}
+
+.product__price {
+  flex-grow: 1;
+  font-family: @font-open-sans;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  color: @font-main-color;
+
+  @media @tablet-widths {
+    font-size: 17px;
+  }
+}
+
+.product__btn {
+  width: 20px;
+  height: 19px;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.product__btn-icon {
+  fill: #dad9d9;
+}
+
+.product__btn:hover .product__btn-icon {
+  fill: @icon-hover;
+}
+
+.product__btn:active .product__btn-icon {
+  fill: @icon-active;
+}
