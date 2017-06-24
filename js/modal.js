@@ -1,4 +1,4 @@
-var links = document.querySelectorAll(".products-feature__btn, .item__btn");
+var links = document.querySelectorAll(".products-feature__btn, .product__btn");
 var modal = document.querySelector(".modal");
 var overlay = document.querySelector(".overlay");
 
